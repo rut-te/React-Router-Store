@@ -1,0 +1,21 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 85vh;
+    padding: 1rem;
+    border-radius: 2%;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+    background-color: rgba(72, 64, 74, 0.714);
+    color: aliceblue;
+}
+
+.card img {
+    height: 150px;
+    width: 90%;
+}
+
+.card p {
+    height: 80%;
+    overflow: hidden;
+}

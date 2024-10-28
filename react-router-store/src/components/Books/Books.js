@@ -1,16 +1,16 @@
 import React, { useEffect, useState } from 'react'
-import style from './Electronics.module.css'
 import ProductArea from '../ProductArea/ProductArea';
-import { getElectronics } from '../../services/storeService';
+import { getBooks } from '../../services/storeService';
 
-function Electronics() {
+function Books() {
   const [products, setProducts] = useState([]);
   useEffect(() => {
-    getElectronics().then(data => setProducts(data));
+    getBooks().then(data => setProducts(data));
+    
   }, []);
   return (
     <ProductArea products={products} />
   )
 }
 
-export default Electronics
+export default Books
